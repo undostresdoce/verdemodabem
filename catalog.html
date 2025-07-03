@@ -1,21 +1,53 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo | Verde Moda 🌻🌼</title>
+  <title>VerdeModa | Catálogo</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-  
-  <!--navbar / productos / otros -->
+<body class="body">
+  <header class="header">
+    <img src="assets/img/img1.png" alt="VerdeModa" class="header__logo" />
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link nav__link--active">Catálogo</a></li>
+        <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <footer>
-    <p>© 2025 VerdeModa.</p>
+  <main class="main">
+    <section class="catalog">
+      <h1 class="catalog__title">Catálogo de Productos</h1>
+
+      <div class="catalog__filters">
+        <button class="catalog__filter" data-category="all">Todos</button>
+        <button class="catalog__filter" data-category="vestuario">Vestuario</button>
+        <button class="catalog__filter" data-category="accesorios">Accesorios</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="vestuario">
+          <img src="assets/img/polera1.png" alt="Polera" class="product-card__image" />
+          <h2 class="product-card__name">Polera de algodón</h2>
+          <a href="product.html" class="product-card__link">Ver más</a>
+        </article>
+
+        <article class="product-card" data-category="accesorios">
+          <img src="assets/img/totebag.png" alt="Bolso reciclado" class="product-card__image" />
+          <h2 class="product-card__name">Bolso de crea</h2>
+          <a href="product.html" class="product-card__link">Ver más</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">By Cvmi © 2025 VerdeModa.</p>
   </footer>
-</body>
+  </body>
 </html>

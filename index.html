@@ -3,13 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verde Moda 🌻🌼</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <title>VerdeModa | Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 </head>
-<body>
+<body class="body">
+  <header class="header">
+    <img src="assets/img/img1.png" alt="Logo VerdeModa" class="header__logo" />
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link">Catálogo</a></li>
+        <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <footer>
-    <p>© 2025 VerdeModa.</p>
+  <main class="main">
+    <section class="hero">
+      <h1 class="hero__title">Tu estilo, tu impacto, tu elección sostenible</h1>
+      <p class="hero__subtitle">Diseños únicos, materiales conscientes 🙌🏼</p>
+    </section>
+
+    <section class="featured">
+      <h2 class="featured__title">Productos Destacados</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="assets/img/polera1.png" alt="Polera" class="product-card__image" />
+          <h3 class="product-card__name">Polera de algodón</h3>
+          <a href="product.html" class="product-card__link">Ver más</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">By Cvmi © 2025 VerdeModa.</p>
   </footer>
 </body>
 </html>
