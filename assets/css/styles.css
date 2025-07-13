@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "variables".
+ *   ,
+ * 2 |   font-family: variables.$font-primary;
+ *   |                ^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\base\_typography.scss 2:16  @use
+ *   scss\style.scss 7:1              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "variables".\a   \2577 \a 2 \2502    font-family: variables.$font-primary;\d\a   \2502                 ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_typography.scss 2:16  @use\a   scss\\style.scss 7:1              root stylesheet';
+}
